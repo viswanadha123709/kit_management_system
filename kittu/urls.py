@@ -20,5 +20,6 @@ from sarigama import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('', views.main, name='home'),
+    path('home/', views.main, name='home_alt'),
 ]

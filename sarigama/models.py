@@ -6,7 +6,7 @@ class kit(models.Model):
 
 
 class schedule(models.Model):
-    kit_id = models.CharField(max_length=100, unique=True)
+    kit_id = models.CharField(max_length=100)
     user_id=models.IntegerField()
     start = models.DateTimeField()
     end = models.DateTimeField()
